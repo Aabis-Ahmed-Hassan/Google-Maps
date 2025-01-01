@@ -13,16 +13,18 @@ class Homescreen extends StatefulWidget {
 class _HomescreenState extends State<Homescreen> {
   Completer<GoogleMapController> _mapController = Completer();
   CameraPosition _cameraPosition =
-      CameraPosition(target: LatLng(23.123, 21.234), zoom: 5);
+      CameraPosition(target: LatLng(23.123, 21.234), zoom: 13);
 
   List<Marker> markers = [
     Marker(
       markerId: MarkerId('1'),
       position: LatLng(23.123, 21.234),
+      infoWindow: InfoWindow(title: 'Location 1'),
     ),
     Marker(
       markerId: MarkerId('2'),
       position: LatLng(23.124, 21.134),
+      infoWindow: InfoWindow(title: 'Location 2'),
     ),
   ];
   @override
