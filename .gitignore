@@ -46,3 +46,4 @@ app.*.map.json
 
 # map api
 /andriod/app/src/main/AndriodManifest.xml
+android/app/src/main/AndroidManifest.xml
