@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_app/location_suggestion.dart';
+import 'package:google_maps_app/custom_marker.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LocationSuggestion(),
+      home: CustomMarker(),
     );
   }
 }
