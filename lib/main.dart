@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_maps_app/custom_info_window_screen.dart';
+import 'package:google_maps_app/polygons_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: CustomInfoWindowScreen());
+      debugShowCheckedModeBanner: false,
+      home: PolygonsScreen(),
+    );
   }
 }
